@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: 
+      context: ./collecta-server
+      dockerfile: Dockerfile
+      args:
+        - JAR_FILE=${JAR_FILE}
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    environment:
+      - JAR_FILE=${JAR_FILE}
+      - SERVER_PORT=${BACKEND_PORT}
+    networks:
+      - collecta-network
+
+  frontend:
+    build: 
+      context: ./collecta-client
+      dockerfile: Dockerfile
+    ports:
+      - "${FRONTEND_PORT}:80"
+    depends_on:
+      - backend
+    networks:
+      - collecta-network
+
+networks:
+  collecta-network:
+    driver: bridge
