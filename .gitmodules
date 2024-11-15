@@ -1,6 +1,6 @@
-[submodule "collecta-server"]
+[submodule "client"]
+	path = client
+	url = https://github.com/Robzyy/collecta-client
+[submodule "server"]
 	path = collecta-server
 	url = https://github.com/Robzyy/collecta-server
-[submodule "collecta-client"]
-	path = collecta-client
-	url = https://github.com/Robzyy/collecta-client
