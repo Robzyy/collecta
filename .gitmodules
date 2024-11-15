@@ -2,5 +2,5 @@
 	path = client
 	url = https://github.com/Robzyy/collecta-client
 [submodule "server"]
-	path = collecta-server
+	path = server
 	url = https://github.com/Robzyy/collecta-server
