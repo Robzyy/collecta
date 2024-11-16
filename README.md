@@ -40,6 +40,6 @@ Manage your subscriptions with ease.
 
 4. Run the docker compose file
     ```bash
-    docker compose up
+    docker-compose up
     ```
 5. Open the website in your browser (http://localhost)
