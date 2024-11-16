@@ -1,6 +1,6 @@
 [submodule "client"]
-	path = client
+	path = Collecta-client
 	url = https://github.com/Robzyy/collecta-client
 [submodule "server"]
-	path = server
+	path = Collecta-server
 	url = https://github.com/Robzyy/collecta-server
